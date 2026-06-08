@@ -1,6 +1,7 @@
 import streamlit as st
 
 from rdkit import Chem
+from rdkit.Chem import Draw
 
 from prediction_utils import (
     predict_permeability_with_ad
