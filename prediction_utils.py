@@ -11,15 +11,15 @@ from sklearn.neighbors import NearestNeighbors
 # Load deployment assets
 
 rf_model = joblib.load(
-    "../Models/hybrid_rf_model_compressed.pkl"
+    "hybrid_rf_model_compressed.pkl"
 )
 
 reference_features = joblib.load(
-    "../Models/training_reference_features_compressed.pkl"
+    "training_reference_features_compressed.pkl"
 )
 
 ad_threshold = joblib.load(
-    "../Models/final_ad_threshold.pkl"
+    "final_ad_threshold.pkl"
 )
 
 
