@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 scikit-learn
-rdkit
+rdkit-pypi
 joblib
 Pillow
