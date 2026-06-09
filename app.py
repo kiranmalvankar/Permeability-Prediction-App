@@ -1,7 +1,7 @@
 import streamlit as st
 
 from rdkit import Chem
-from rdkit.Chem import Draw
+
 
 from prediction_utils import (
     predict_permeability_with_ad
@@ -27,15 +27,7 @@ if st.button("Predict"):
 
     else:
 
-        img = Draw.MolToImage(
-            mol,
-            size=(400, 300)
-        )
-
-        st.image(
-            img,
-            caption="Molecular Structure"
-        )
+        
 
         result = predict_permeability_with_ad(
             smiles
