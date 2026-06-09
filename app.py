@@ -15,6 +15,11 @@ from prediction_utils import (
 
 st.title("Permeability Prediction Tool")
 
+if DRAW_AVAILABLE:
+    st.success("RDKit drawing module loaded successfully")
+else:
+    st.error(f"RDKit drawing error: {DRAW_ERROR}")
+
 st.write(
     "Predict permeability (logPapp) from molecular SMILES."
 )
