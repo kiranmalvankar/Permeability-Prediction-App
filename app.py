@@ -2,6 +2,12 @@ import streamlit as st
 
 from rdkit import Chem
 
+try:
+    from rdkit.Chem.Draw import rdMolDraw2D
+    DRAW_AVAILABLE = True
+except Exception as e:
+    DRAW_AVAILABLE = False
+    DRAW_ERROR = str(e)
 
 from prediction_utils import (
     predict_permeability_with_ad
